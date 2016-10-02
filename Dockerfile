@@ -3,8 +3,8 @@
 # Reference:  http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html
 # Version     1.0
 # 
-FROM morphix/debian-jessie:latest RUN \
-    echo "===> add webupd8 repository..."  && \
+FROM morphix/debian-jessie:latest
+RUN echo "===> add webupd8 repository..."  && \
     echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee /etc/apt/sources.list.d/webupd8team-java.list  && \
     echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list  && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886  && \
