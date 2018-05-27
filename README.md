@@ -1,1 +1,1 @@
-Oracle JDK 8 using Debian Jessie
+Oracle JDK 8 using Debian Stretch
